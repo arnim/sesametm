@@ -113,13 +113,15 @@
 		<repository>
 			<id>topicmapslab</id>
 			<name>Topic Maps Lab Repositiory</name>
-			<url>scp://maven@topicmapslab.de/home/maven/webdir/maven.topicmapslab.de/public/public</url>
+			<!-- <url>sftp://maven@topicmapslab.de/home/maven/webdir/maven.topicmapslab.de/public/public</url> -->
+			<url>scp://maven@topicmapslab.de:/home/maven/webdir/maven.topicmapslab.de/public/third_part</url>
+			
 		</repository>
 	</distributionManagement>
 
 	<modules>
 		<module>sesametm.engine</module>
-		<!-- <module>sesametm.live</module>
-		<module>sesametm.shared</module> -->
+		<!-- <module>sesametm.live</module> -->
+		<module>sesametm.common</module> 
 	</modules>
 </project>
