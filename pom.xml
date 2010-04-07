@@ -96,13 +96,6 @@
 		</plugins>
 		
 		<resources>
-			<resource>
-				<targetPath>META-INF</targetPath>
-				<directory>${basedir}/META-INF</directory>
-				<includes>
-					<include>MANIFEST.MF</include>
-				</includes>				
-			</resource>
 		</resources>
 		
 	</build>
