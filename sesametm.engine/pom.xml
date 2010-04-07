@@ -14,13 +14,23 @@
 	<version>${project.parent.version}</version>
 	<name>SesameTM Engine</name>
 	<description>A TMAPI 2.0 conform Topic Maps engine that uses the Sesame RDF framework</description>
-	
+
 	<build>
+
+		<resources>
+			<resource>
+				<directory>META-INF/services</directory>
+				<targetPath>META-INF/services</targetPath>
+			</resource>
+		</resources>
+
+
+
 		<plugins>
-        </plugins>
+		</plugins>
 	</build>
-	
+
 	<dependencies>
 	</dependencies>
-	
+
 </project>

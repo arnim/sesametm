@@ -44,7 +44,8 @@ public final class CTopicMapSystemFactory extends org.tmapi.core.TopicMapSystemF
   /**
    * {@inheritDoc}
    */
-  public TopicMapSystem newTopicMapSystem() throws TMAPIException {
+  @Override
+public TopicMapSystem newTopicMapSystem() throws TMAPIException {
       return new CTopicMapSystem(
           new HashMap<String, Object>(theProperties),
           new HashMap<String, Boolean>(theFeatures));

@@ -44,7 +44,8 @@ public final class TopicMapSystemFactory extends org.tmapi.core.TopicMapSystemFa
   /**
    * {@inheritDoc}
    */
-  public TopicMapSystem newTopicMapSystem() throws TMAPIException {
+  @Override
+public TopicMapSystem newTopicMapSystem() throws TMAPIException {
 //    if (usedImplementation != null && usedImplementation.equalsIgnoreCase("live") )
 //      return new LTopicMapSystem(
 //          new HashMap<String, Object>(theProperties),

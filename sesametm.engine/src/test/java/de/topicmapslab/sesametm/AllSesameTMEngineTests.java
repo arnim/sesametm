@@ -5,6 +5,7 @@
 
 package de.topicmapslab.sesametm;
 
+import de.topicmapslab.sesametm.cregan.SesameTMEngineTest;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
@@ -13,10 +14,11 @@ public class AllSesameTMEngineTests {
 
   public static Test suite() {
     TestSuite suite = new TestSuite("All Tests for SesameTM Engine");
-    // $JUnit-BEGIN$
-    suite.addTest(org.tmapi.AllTests.suite());
 
-    // $JUnit-END$
+    suite.addTest(org.tmapi.AllTests.suite());
+    
+    suite.addTestSuite(SesameTMEngineTest.class);
+    
     return suite;
   }
 
