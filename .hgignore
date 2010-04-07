@@ -1,0 +1,16 @@
+syntax: glob
+*.class
+.metadata
+.directory
+.keep
+*/\${builder}
+
+**/*.log*
+
+*/lib/*jar
+**/target
+**/.settings
+target
+bin
+*~
+*.orig
