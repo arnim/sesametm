@@ -5,6 +5,8 @@
 
 package de.topicmapslab.sesametm.cregan;
 
+import junit.framework.TestCase;
+
 import org.junit.Test;
 import org.openrdf.repository.Repository;
 import org.openrdf.repository.RepositoryConnection;
@@ -14,8 +16,6 @@ import org.openrdf.sail.memory.MemoryStore;
 import org.tmapi.core.TopicMap;
 import org.tmapi.core.TopicMapSystem;
 import org.tmapi.core.TopicMapSystemFactory;
-
-import junit.framework.TestCase;
 
 public class SesameTMEngineTest extends TestCase {
 
@@ -50,10 +50,11 @@ public class SesameTMEngineTest extends TestCase {
 				.newInstance();
 		TopicMapSystem tmSys = tmSysFactory.newTopicMapSystem();
 		TopicMap tm1 = tmSys.createTopicMap("http://www.ex.com/map1");
-		TopicMap tm2 = tmSys.createTopicMap("http://www.ex.com/map2");
+		tmSys.createTopicMap("http://www.ex.com/map2");
 		assertEquals(tm1, tmSys.getTopicMap("http://www.ex.com/map1"));
 		assertNull(tmSys.getTopicMap("http://www.ex.com/map3"));
 		assertNotSame(tm1, tmSys.getTopicMap("http://www.ex.com/map2"));
 	}
+
 
 }
