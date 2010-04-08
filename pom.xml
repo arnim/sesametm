@@ -107,13 +107,19 @@
 	      <id>Aduna</id> 
 	      <url>http://repo.aduna-software.org/maven2/releases</url> 
 	    </repository>
+		<repository>
+			<id>topicmapslab-third_party</id>
+			<name>Topic Maps Lab Repositiory</name>
+			<url>scp://maven@topicmapslab.de/home/maven/webdir/maven.topicmapslab.de/public/third_party</url>
+		</repository>
 	</repositories>
 	<distributionManagement>
 		<repository>
-			<id>topicmapslab</id>
+			<id>topicmapslab-public</id>
 			<name>Topic Maps Lab Repositiory</name>
 			<url>scp://maven@topicmapslab.de/home/maven/webdir/maven.topicmapslab.de/public/public</url>
 		</repository>
+
 	</distributionManagement>
 
 	<modules>
