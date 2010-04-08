@@ -3,6 +3,7 @@ syntax: glob
 .metadata
 .directory
 .keep
+.DS_Store
 */\${builder}
 
 **/*.log*
