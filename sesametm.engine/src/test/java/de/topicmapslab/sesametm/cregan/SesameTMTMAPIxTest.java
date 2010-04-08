@@ -5,7 +5,9 @@
 
 package de.topicmapslab.sesametm.cregan;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import junit.framework.TestCase;
 
@@ -14,6 +16,7 @@ import org.tmapi.core.TopicMap;
 import org.tmapi.core.TopicMapSystem;
 import org.tmapi.core.TopicMapSystemFactory;
 import org.tmapix.io.XTM20TopicMapReader;
+import org.tmapix.io.XTM20TopicMapWriter;
 import org.tmapix.io.XTMTopicMapReader;
 
 import de.topicmapslab.sesametm.topicmaps.Accessor;
@@ -48,6 +51,14 @@ public class SesameTMTMAPIxTest extends TestCase {
 		XTMTopicMapReader reader = new XTMTopicMapReader(tm, stream, "http://www.ex.com/some");
         reader.read();
         assertEquals(113, tm.getTopics().size());
+        XTM20TopicMapWriter writer = new XTM20TopicMapWriter(new OutputStream() {
+			@Override
+			public void write(int b) throws IOException {
+//				System.out.println("b");
+			//TOOD verification
+			}
+		}, "http://www.ex.com/some");
+        writer.write(tm);
 	}
 
 }
