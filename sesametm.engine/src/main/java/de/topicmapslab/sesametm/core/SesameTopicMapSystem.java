@@ -8,10 +8,16 @@ package de.topicmapslab.sesametm.core;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.openrdf.model.Statement;
+import org.openrdf.model.vocabulary.RDF;
+import org.openrdf.repository.RepositoryResult;
 import org.tmapi.core.FeatureNotRecognizedException;
 import org.tmapi.core.Locator;
 import org.tmapi.core.TopicMap;
 import org.tmapi.core.TopicMapSystem;
+
+import de.topicmapslab.sesametm.vocabularies.CREGAN;
+import de.topicmapslab.sesametm.vocabularies.PROPERTY;
 
 /**
  * @author Arnim Bleier
@@ -38,6 +44,10 @@ public abstract class SesameTopicMapSystem implements TopicMapSystem {
     theProperties = properties;
     theFeatures = features;
   }
+  
+  protected void setConnection(Object o) {
+	  theProperties.put(PROPERTY.CONNECTION, o);
+}
 
   /**
    * {@inheritDoc}
@@ -62,17 +72,9 @@ public abstract class SesameTopicMapSystem implements TopicMapSystem {
    */
   @Override
   public TopicMap getTopicMap(String s) {
-    // TODO
-    return topicMpap;
+    return getTopicMap(new SesameLocator(s));
   }
 
-  /**
-   * {@inheritDoc}
-   */
-  @Override
-  public TopicMap getTopicMap(Locator locator) {
-    // TODO
-    return topicMpap;
-  }
+
 
 }
