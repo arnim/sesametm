@@ -16,7 +16,6 @@
 	<description>A TMAPI 2.0 conform Topic Maps engine that uses the Sesame RDF framework</description>
 
 	<build>
-
 		<resources>
 			<resource>
 				<directory>META-INF/services</directory>
@@ -24,13 +23,60 @@
 			</resource>
 		</resources>
 
-
-
 		<plugins>
 		</plugins>
 	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>semagia</groupId>
+			<artifactId>semagia-mio</artifactId>
+			<version>0.9.5</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>semagia</groupId>
+			<artifactId>semagia-mio-xtm</artifactId>
+			<version>0.9.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.8</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>semagia</groupId>
+			<artifactId>semagia-mio-ltm</artifactId>
+			<version>0.9.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>semagia</groupId>
+			<artifactId>semagia-mio-snello</artifactId>
+			<version>0.9.3</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>semagia</groupId>
+			<artifactId>semagia-mio-ctm</artifactId>
+			<version>0.9.3</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.tmapix</groupId>
+			<artifactId>tmapix-io</artifactId>
+			<version>0.3.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.tmapix</groupId>
+			<artifactId>tmapix-io</artifactId>
+			<version>0.3.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 </project>
