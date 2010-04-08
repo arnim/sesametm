@@ -24,6 +24,7 @@ import org.tmapi.core.TopicMapExistsException;
 import de.topicmapslab.sesametm.core.SesameLocator;
 import de.topicmapslab.sesametm.core.SesameTopicMapSystem;
 import de.topicmapslab.sesametm.vocabularies.CREGAN;
+import de.topicmapslab.sesametm.vocabularies.PROPERTY;
 
 /**
  * @author Arnim Bleier
@@ -37,15 +38,19 @@ public class CTopicMapSystem extends SesameTopicMapSystem {
   public CTopicMapSystem(HashMap<String, Object> properties,
       HashMap<String, Boolean> features) {
     super(properties, features);
-    Repository myRepository = new SailRepository(new MemoryStore());
     try {
-      myRepository.initialize();
-      con = myRepository.getConnection();
-      con.remove(con.getStatements(null, null, null, true));
-
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
+    	con = (RepositoryConnection) getProperty(PROPERTY.CONNECTION);
+    	if (con == null)
+    		throw new Exception();
+	} catch (Exception e) {
+	    Repository myRepository = new SailRepository(new MemoryStore());
+	    try {
+	      myRepository.initialize();
+	      con = myRepository.getConnection();
+	    } catch (Exception e1) {
+	      e.printStackTrace();
+	    }
+	}
   }
 
   /*

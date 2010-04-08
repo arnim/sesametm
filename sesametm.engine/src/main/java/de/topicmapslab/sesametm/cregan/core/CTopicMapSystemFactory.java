@@ -15,7 +15,6 @@ import org.tmapi.core.TMAPIException;
 import org.tmapi.core.TopicMapSystem;
 
 import de.topicmapslab.sesametm.cregan.core.CTopicMapSystem;
-//import de.topicmapslab.sesametm.live.core.LTopicMapSystem;
 import de.topicmapslab.sesametm.vocabularies.FEATURE;
 
 /**
