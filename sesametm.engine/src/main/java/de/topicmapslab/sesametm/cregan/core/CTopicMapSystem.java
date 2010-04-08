@@ -47,6 +47,7 @@ public class CTopicMapSystem extends SesameTopicMapSystem {
 	    try {
 	      myRepository.initialize();
 	      con = myRepository.getConnection();
+	      setConnection(con);
 	    } catch (Exception e1) {
 	      e.printStackTrace();
 	    }
@@ -134,6 +135,23 @@ public class CTopicMapSystem extends SesameTopicMapSystem {
     }
     return result;
   }
+  
+  
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public TopicMap getTopicMap(Locator locator) {
+	  RepositoryResult<Statement> statements;
+	  try {
+		statements = con.getStatements(
+		          ((SesameLocator) locator).locatorURI, RDF.TYPE, CREGAN.TOPICMAP, true);
+	  if (statements.hasNext()) 
+		  return new CTopicMap(locator, this);;
+	  } catch (RepositoryException e) {}
+	return null;
+  }
+  
 
   public RepositoryConnection getConnection() {
     return con;
