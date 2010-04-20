@@ -124,7 +124,7 @@
 
 	<modules>
 		<module>sesametm.engine</module>
-		<!-- <module>sesametm.live</module>
-		<module>sesametm.shared</module> -->
+		<module>sesametm.live</module>
+	<!--	<module>sesametm.shared</module> -->
 	</modules>
 </project>
