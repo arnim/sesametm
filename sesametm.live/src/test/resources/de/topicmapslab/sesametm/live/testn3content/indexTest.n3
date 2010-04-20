@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>. 
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.  
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+@prefix ex: <http://www.example.com/things#>.  
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.  
+
+
+
+ex:Hans rdf:type foaf:Person. 
+ex:Lumpi ex:predicate ex:Thing; 
+	ex:age "2005-12-31"^^xsd:date, 
+		"2005-12-32"^^xsd:date; 
+	ex:countryOfBirth "Hong Kong"^^xsd:string;
+	ex:homepage ex:lumpisPage; 
+	foaf:firstName "Lumperl"^^xsd:string; 
+	foaf:additionalName "Lump"^^xsd:string; 
+	foaf:additionalName "Lupo"^^xsd:string; 
+	foaf:additionalName "2005-12-32"^^xsd:date; 
+	foaf:additionalName ex:Lupo; 
+	foaf:familyName "Doggi"^^xsd:string. 
+ex:Lumpi rdf:type foaf:Person. 
+ex:Fritz rdf:type foaf:Person. 
+ex:Fritz rdf:type foaf:Friend. 
+ex:Hans foaf:knows ex:Lumpi. 
+ex:Fritz foaf:knows ex:Jens. 
+ex:Fritz foaf:knows ex:Lumpi. 
+ex:Lumpi foaf:knows ex:Fritz. 
+ex:Lumpi foaf:pokes ex:Fritz. 
+ex:Lumpi ex:tosubjectlocatorpredicate ex:LumpisLS1. 
+ex:Lumpi ex:tosubjectlocatorpredicate ex:LumpisLS2. 
+ex:Lumpi ex:tosubjectidentifierpredicate ex:LumpisSI. 

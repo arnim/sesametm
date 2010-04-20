@@ -1,0 +1,12 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>. 
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.  
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+@prefix rtm: <http://psi.ontopia.net/rtm/#>.
+@prefix ex: <http://www.example.com/things#>.  
+
+
+rdf:type rtm:maps-to rtm:instance-of. 
+ex:age rtm:maps-to rtm:occurrence. 
+ex:countryOfBirth rtm:maps-to rtm:occurrence; 
+	rtm:in-scope ex:occurrenceScopingTopic. 
+ex:homepage rtm:maps-to rtm:occurrence. 
