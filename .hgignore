@@ -8,6 +8,8 @@ syntax: glob
 
 **/*.log*
 
+**/*.jar
+
 */lib/*jar
 **/target
 **/.settings
