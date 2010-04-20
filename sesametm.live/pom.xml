@@ -14,7 +14,7 @@
 	<version>${project.parent.version}</version>
 	<name>Sesametm Live</name>
 	<description>Sesametm Live</description>
-	
+
 	<build>
 		<resources>
 			<resource>
@@ -26,25 +26,29 @@
 		<plugins>
 		</plugins>
 	</build>
-	
-	<dependencies>
-	    	<dependency>
-  		<groupId>org.openrdf.elmo</groupId>
-  		<artifactId>elmo-api</artifactId>
-  		<version>1.5</version>
-  	</dependency>
 
-  	  <dependency>
-  		<groupId>org.openrdf.elmo</groupId>
-  		<artifactId>elmo-core</artifactId>
-  		<version>1.5</version>
-  	</dependency>
-  	 <dependency>
-  		<groupId>org.openrdf.elmo</groupId>
-  		<artifactId>elmo-repository</artifactId>
-  		<version>1.5</version>
-  	</dependency>
-  	
+	<dependencies>
+		<dependency>
+			<groupId>org.openrdf.elmo</groupId>
+			<artifactId>elmo-api</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.elmo</groupId>
+			<artifactId>elmo-core</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.elmo</groupId>
+			<artifactId>elmo-repository</artifactId>
+			<version>1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openrdf.sesame</groupId>
+			<artifactId>sesame-rio-n3</artifactId>
+			<version>2.1</version>
+		</dependency>
 	</dependencies>
-	
+
 </project>
