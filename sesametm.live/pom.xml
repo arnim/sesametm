@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>de.topicmapslab</groupId>
+		<artifactId>sesametm</artifactId>
+		<version>0.0.2</version>
+		<relativePath>..</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.topicmapslab.sesametm</groupId>
+	<artifactId>sesametm-live</artifactId>
+	<version>${project.parent.version}</version>
+	<name>Sesametm Live</name>
+	<description>Sesametm Live</description>
+	
+	<build>
+		<plugins>
+        </plugins>
+	</build>
+	
+	<dependencies>
+	    	<dependency>
+  		<groupId>org.openrdf.elmo</groupId>
+  		<artifactId>elmo-api</artifactId>
+  		<version>1.5</version>
+  	</dependency>
+
+  	  <dependency>
+  		<groupId>org.openrdf.elmo</groupId>
+  		<artifactId>elmo-core</artifactId>
+  		<version>1.5</version>
+  	</dependency>
+  	 <dependency>
+  		<groupId>org.openrdf.elmo</groupId>
+  		<artifactId>elmo-repository</artifactId>
+  		<version>1.5</version>
+  	</dependency>
+  	
+	</dependencies>
+	
+</project>
