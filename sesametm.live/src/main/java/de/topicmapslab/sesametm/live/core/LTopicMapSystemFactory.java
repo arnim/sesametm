@@ -32,8 +32,8 @@ public final class LTopicMapSystemFactory extends org.tmapi.core.TopicMapSystemF
     theProperties = new HashMap<String, Object>();
     theFeatures = new HashMap<String, Boolean>();
     theFeatures.put(FEATURE.AUTOMERGE, false);
-    theFeatures.put(FEATURE.READ_ONLY, false);
-    theFeatures.put(FEATURE.TYPE_INSTANCE_ASSOCS, false);
+    theFeatures.put(FEATURE.READ_ONLY, true);
+    theFeatures.put(FEATURE.TYPE_INSTANCE_ASSOCS, true);
   }
 
   

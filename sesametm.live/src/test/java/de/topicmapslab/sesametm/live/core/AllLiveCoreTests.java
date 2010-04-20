@@ -24,7 +24,7 @@ public class AllLiveCoreTests {
 
     suite.addTestSuite(LTypeTest.class);
     
-    suite.addTestSuite(SystemTest.class);
+//    suite.addTestSuite(SystemTest.class);
     
     suite.addTestSuite(LRemoteTest.class);
 
