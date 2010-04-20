@@ -3,7 +3,7 @@
  * License:   Apache License, Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.html
  */
 
-package de.topicmapslab.sesametm.cregan.core;
+package de.topicmapslab.sesametm.live.core;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,6 @@ import org.tmapi.core.FeatureNotSupportedException;
 import org.tmapi.core.TMAPIException;
 import org.tmapi.core.TopicMapSystem;
 
-import de.topicmapslab.sesametm.cregan.core.CTopicMapSystem;
 import de.topicmapslab.sesametm.vocabularies.FEATURE;
 
 /**
@@ -22,14 +21,14 @@ import de.topicmapslab.sesametm.vocabularies.FEATURE;
  * @email bleier@informatik.uni-leipzig.de
  */
 
-public final class CTopicMapSystemFactory extends org.tmapi.core.TopicMapSystemFactory {
+public final class LTopicMapSystemFactory extends org.tmapi.core.TopicMapSystemFactory {
   
   
   private Map<String, Object> theProperties;
   private Map<String, Boolean> theFeatures;
 
 
-  public CTopicMapSystemFactory() {
+  public LTopicMapSystemFactory() {
     theProperties = new HashMap<String, Object>();
     theFeatures = new HashMap<String, Boolean>();
     theFeatures.put(FEATURE.AUTOMERGE, false);
@@ -43,7 +42,7 @@ public final class CTopicMapSystemFactory extends org.tmapi.core.TopicMapSystemF
    */
   @Override
 public TopicMapSystem newTopicMapSystem() throws TMAPIException {
-      return new CTopicMapSystem(
+      return new LTopicMapSystem(
           new HashMap<String, Object>(theProperties),
           new HashMap<String, Boolean>(theFeatures));
   }

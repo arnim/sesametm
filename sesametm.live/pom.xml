@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>de.topicmapslab</groupId>
 		<artifactId>sesametm</artifactId>
-		<version>0.0.2</version>
+		<version>0.1.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -16,8 +16,15 @@
 	<description>Sesametm Live</description>
 	
 	<build>
+		<resources>
+			<resource>
+				<directory>META-INF/services</directory>
+				<targetPath>META-INF/services</targetPath>
+			</resource>
+		</resources>
+
 		<plugins>
-        </plugins>
+		</plugins>
 	</build>
 	
 	<dependencies>
