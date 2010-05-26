@@ -23,3 +23,5 @@ bin
 sesametm.common/.classpath
 sesametm.engine/.classpath
 sesametm.live/.classpath
+*maven-eclipse.xml
+*.externalToolBuilders
