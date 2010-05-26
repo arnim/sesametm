@@ -53,15 +53,10 @@
 		<dependency>
 			<groupId>de.topicmapslab.sesametm</groupId>
 			<artifactId>sesametm-engine</artifactId>
-			<version>0.1.0</version>
-		</dependency>
-		
-		<!--
-		<dependency>
-			<groupId>de.topicmapslab.sesametm</groupId>
-			<artifactId>sesametm-common</artifactId>
 			<version>0.1.0-snapshot</version>
+			<type>jar</type>
+			<scope>compile</scope>
 		</dependency>
-	--></dependencies>
+	</dependencies>
 
 </project>
