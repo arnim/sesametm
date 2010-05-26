@@ -15,9 +15,9 @@ import org.tmapi.core.Topic;
 import org.tmapi.index.LiteralIndex;
 
 import de.topicmapslab.sesametm.core.SesameLocator;
-import de.topicmapslab.sesametm.live.LTestCase;
+import de.topicmapslab.sesametm.live.LBaseCase;
 
-public class LLiteralIndexTest extends LTestCase {
+public class LLiteralIndexTest extends LBaseCase {
 
   LiteralIndex index;
 

@@ -17,13 +17,13 @@ import org.tmapi.core.Topic;
 import de.topicmapslab.sesametm.core.SesameLocator;
 import de.topicmapslab.sesametm.live.core.LTopic;
 import de.topicmapslab.sesametm.live.core.SparqlTopicMap;
-import de.topicmapslab.sesametm.live.LTestCase;
+import de.topicmapslab.sesametm.live.LBaseCase;
 
 /**
  * @author Arnim Bleier
  * 
  */
-public class LTypeTest extends LTestCase {
+public class LTypeTest extends LBaseCase {
 
   public LTypeTest() {
     super("typeTest", "typeTest.mapping");

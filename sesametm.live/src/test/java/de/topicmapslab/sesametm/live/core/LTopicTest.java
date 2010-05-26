@@ -12,13 +12,13 @@ import org.tmapi.core.Locator;
 import org.tmapi.core.Topic;
 
 import de.topicmapslab.sesametm.core.SesameLocator;
-import de.topicmapslab.sesametm.live.LTestCase;
+import de.topicmapslab.sesametm.live.LBaseCase;
 
 /**
  * @author Arnim Bleier
  * 
  */
-public class LTopicTest extends LTestCase {
+public class LTopicTest extends LBaseCase {
 
   public LTopicTest() {
     super("topicTest", "topicTest.mapping");

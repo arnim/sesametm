@@ -7,7 +7,7 @@ package de.topicmapslab.sesametm.live.testn3content;
 
 import java.io.InputStream;
 
-public class TestCotentAccessor {
+public class CotentAccessor {
 
   /**
    * Allows to read a file inside a JAR file.

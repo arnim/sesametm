@@ -17,13 +17,13 @@ import org.tmapi.core.Topic;
 import de.topicmapslab.sesametm.core.SesameLocator;
 import de.topicmapslab.sesametm.live.core.LTopic;
 import de.topicmapslab.sesametm.live.core.SparqlTopicMap;
-import de.topicmapslab.sesametm.live.LTestCase;
+import de.topicmapslab.sesametm.live.LBaseCase;
 
 /**
  * @author Arnim Bleier
  * 
  */
-public class LOccurenceTest extends LTestCase {
+public class LOccurenceTest extends LBaseCase {
 
   public LOccurenceTest() {
     super("occurenceTest", "occurenceTest.mapping");
