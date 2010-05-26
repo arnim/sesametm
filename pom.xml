@@ -68,8 +68,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.0.2</version>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.6</source>
+					<target>1.6</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -110,7 +110,7 @@
 		<repository>
 			<id>topicmapslab-third_party</id>
 			<name>Topic Maps Lab Repositiory</name>
-			<url>scp://maven@topicmapslab.de/home/maven/webdir/maven.topicmapslab.de/public/third_party</url>
+			<url>http://maven.topicmapslab.de/third_party/</url>
 		</repository>
 	</repositories>
 	<distributionManagement>

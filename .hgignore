@@ -17,3 +17,9 @@ target
 bin
 *~
 *.orig
+*.classpath
+.project
+.settings
+sesametm.common/.classpath
+sesametm.engine/.classpath
+sesametm.live/.classpath
