@@ -22,7 +22,7 @@ import org.tmapi.core.TopicMapSystemFactory;
 import de.topicmapslab.sesametm.core.SesameLocator;
 import de.topicmapslab.sesametm.live.core.LTopicMapSystem;
 import de.topicmapslab.sesametm.vocabularies.PROPERTY;
-import de.topicmapslab.sesametm.live.testn3content.TestCotentAccessor;
+import de.topicmapslab.sesametm.live.testn3content.CotentAccessor;
 
 /**
  * @author Arnim Bleier
@@ -38,7 +38,7 @@ public class LRemoteTest extends TestCase {
   
   @Override
   protected void setUp() throws Exception {
-    TestCotentAccessor contentAccesor = new TestCotentAccessor();
+    CotentAccessor contentAccesor = new CotentAccessor();
     TopicMapSystemFactory factory = TopicMapSystemFactory.newInstance();
     factory.setProperty(PROPERTY.READONLY, true);
     factory.setProperty(PROPERTY.MAPPINGVOCAB, contentAccesor

@@ -21,19 +21,19 @@ import org.tmapi.core.TopicMapSystemFactory;
 
 import de.topicmapslab.sesametm.live.core.LTopicMapSystem;
 import de.topicmapslab.sesametm.vocabularies.PROPERTY;
-import de.topicmapslab.sesametm.live.testn3content.TestCotentAccessor;
+import de.topicmapslab.sesametm.live.testn3content.CotentAccessor;
 
-public class LTestCase extends TestCase {
+public class LBaseCase extends TestCase {
 
 	String testData;
 	String testRTM;
-	private TestCotentAccessor contentAccesor;
+	private CotentAccessor contentAccesor;
 	private final String CONNECTION = "de.topicmapslab.sesametm.vocabularies.connection";
 
-	public LTestCase(String data, String rtm) {
+	public LBaseCase(String data, String rtm) {
 		testData = data + ".n3";
 		testRTM = rtm + ".n3";
-		contentAccesor = new TestCotentAccessor();
+		contentAccesor = new CotentAccessor();
 	}
 
 	protected LTopicMapSystem _sys;

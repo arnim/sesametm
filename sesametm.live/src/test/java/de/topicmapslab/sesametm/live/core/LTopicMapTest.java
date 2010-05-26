@@ -17,13 +17,13 @@ import org.tmapi.core.Topic;
 
 import de.topicmapslab.sesametm.core.SesameLocator;
 import de.topicmapslab.sesametm.utils.SesameTMUnsupportedOperationException;
-import de.topicmapslab.sesametm.live.LTestCase;
+import de.topicmapslab.sesametm.live.LBaseCase;
 
 /**
  * @author Arnim Bleier
  * 
  */
-public class LTopicMapTest extends LTestCase {
+public class LTopicMapTest extends LBaseCase {
 
   public LTopicMapTest() {
     super("topicMapTest", "topicMapTest.mapping");

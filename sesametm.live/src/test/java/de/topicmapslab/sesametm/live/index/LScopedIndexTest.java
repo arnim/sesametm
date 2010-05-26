@@ -17,9 +17,9 @@ import org.tmapi.core.Topic;
 import org.tmapi.index.ScopedIndex;
 
 import de.topicmapslab.sesametm.core.SesameLocator;
-import de.topicmapslab.sesametm.live.LTestCase;
+import de.topicmapslab.sesametm.live.LBaseCase;
 
-public class LScopedIndexTest extends LTestCase {
+public class LScopedIndexTest extends LBaseCase {
 
   ScopedIndex index;
 

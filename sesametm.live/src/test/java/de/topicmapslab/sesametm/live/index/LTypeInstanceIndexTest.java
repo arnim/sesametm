@@ -19,9 +19,9 @@ import org.tmapi.core.Topic;
 import org.tmapi.index.TypeInstanceIndex;
 
 import de.topicmapslab.sesametm.core.SesameLocator;
-import de.topicmapslab.sesametm.live.LTestCase;
+import de.topicmapslab.sesametm.live.LBaseCase;
 
-public class LTypeInstanceIndexTest extends LTestCase {
+public class LTypeInstanceIndexTest extends LBaseCase {
 
   public LTypeInstanceIndexTest() {
     super("indexTest", "indexTest.mapping");
