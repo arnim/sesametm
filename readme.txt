@@ -19,8 +19,8 @@ Testing:
 
  - It has been tested against the RSpec example suite in (J)RTM
 	=> Optain the RSpec examples:
-		wget http://rubygems.org/downloads/rtm-x.x.x.gem
-		mv rtm-x.x.x.gem rtm.zip
+		wget http://rubygems.org/downloads/rtm-0.3.0.gem
+		mv rtm-0.3.0.gem rtm.zip
 		tar -gz rtm.zip
 		tar -xf data.tar.gz
 	=> Execute the examples:
