@@ -21,7 +21,7 @@ Testing:
 	=> Optain the RSpec examples:
 		wget http://rubygems.org/downloads/rtm-0.3.0.gem
 		mv rtm-0.3.0.gem rtm.zip
-		tar -gz rtm.zip
+		tar -xf rtm.zip
 		tar -xf data.tar.gz
 	=> Execute the examples:
 		jruby -S spec
