@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>de.topicmapslab</groupId>
+		<artifactId>sesametm</artifactId>
+		<version>0.1.0-snapshot</version>
+		<relativePath>..</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.topicmapslab.sesametm</groupId>
+	<artifactId>sesametm-common</artifactId>
+	<version>${project.parent.version}</version>
+	<name>SesameTM Common</name>
+	<description>Shared Classes 4 SesameTM</description>
+
+	<build>
+		<plugins>
+		</plugins>
+	</build>
+
+	<dependencies>
+	</dependencies>
+
+</project>

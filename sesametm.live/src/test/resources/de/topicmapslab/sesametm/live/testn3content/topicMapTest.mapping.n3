@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>. 
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.  
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+@prefix rtm: <http://psi.ontopia.net/rtm/#>.
+@prefix ex: <http://www.example.com/things#>.  
+
+
+ex:predicate rtm:maps-to rtm:instance-of. 
+rdf:type rtm:maps-to rtm:instance-of. 
+foaf:knows rtm:maps-to rtm:association; 
+	rtm:subject-role foaf:Person; 
+	rtm:object-role foaf:Friend; 
+	rtm:in-scope ex:assoScopingTopic. 
+foaf:pokes rtm:maps-to rtm:association; 
+	rtm:subject-role foaf:Person; 
+	rtm:object-role foaf:Friend; 
+	rtm:type ex:pokeAssoTypeTopic. 
+ex:tosubjectidentifierpredicate rtm:maps-to rtm:subject-identifier. 
+ex:tosubjectlocatorpredicate rtm:maps-to rtm:subject-locator. 

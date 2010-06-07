@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>. 
+@prefix rtm: <http://psi.ontopia.net/rtm/#>.
+@prefix dbpprop:	<http://dbpedia.org/property/> . 
+@prefix ex:	<http://example.org/vocab#> . 
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> . 
+
+
+rdf:type rtm:maps-to rtm:instance-of. 
+dbpprop:abstract rtm:maps-to rtm:occurrence. 
+foaf:depiction rtm:maps-to rtm:occurrence. 
+foaf:name rtm:maps-to rtm:basename. 
+dbpprop:influenced rtm:maps-to rtm:association ;
+	rtm:subject-role ex:role-model ;
+	rtm:object-role ex:student ;
+	rtm:in-scope <http://dbpedia.org> . 
+
+

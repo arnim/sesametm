@@ -1,0 +1,27 @@
+syntax: glob
+*.class
+.metadata
+.directory
+.keep
+.DS_Store
+*/\${builder}
+
+**/*.log*
+
+**/*.jar
+
+*/lib/*jar
+**/target
+**/.settings
+target
+bin
+*~
+*.orig
+*.classpath
+.project
+.settings
+sesametm.common/.classpath
+sesametm.engine/.classpath
+sesametm.live/.classpath
+*maven-eclipse.xml
+*.externalToolBuilders
