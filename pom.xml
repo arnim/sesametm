@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.topicmapslab</groupId>
 	<artifactId>sesametm</artifactId>
-	<version>0.1.0-snapshot</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
