@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.topicmapslab</groupId>
 	<artifactId>sesametm</artifactId>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>0.1.1</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -109,10 +109,11 @@
 	      <url>http://repo.aduna-software.org/maven2/releases</url> 
 	    </repository>
 		<repository>
-			<id>topicmapslab-third_party</id>
-			<name>Topic Maps Lab Repositiory</name>
-			<url>http://maven.topicmapslab.de/third_party/</url>
+			<id>semagia</id>
+			<name>semagia</name>
+			<url>http://repository.semagia.com/snapshots</url>
 		</repository>
+		
 	</repositories>
 	<distributionManagement>
 		<repository>
