@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.topicmapslab</groupId>
 	<artifactId>sesametm</artifactId>
-	<version>0.1.2-SNAPSHOT</version>
+	<version>0.1.7-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -127,7 +127,7 @@
 		<repository>
 			<id>topicmapslab-public</id>
 			<name>Topic Maps Lab Repositiory</name>
-			<url>scp://maven@topicmapslab.de/home/maven/webdir/maven.topicmapslab.de/public/public</url>
+			<url>scp://maven.topicmapslab.de/home/maven/webdir/maven.topicmapslab.de/public/public</url>
 		</repository>
 
 	</distributionManagement>
